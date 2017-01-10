@@ -7,10 +7,19 @@ import {
     Navigator
 } from 'react-native';
 
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import allReducers from '../reducers';
+
+import Main from './main.js';
+
+const store = createStore(allReducers);
+
 export default Home = () => {
 	return (
-        <View>
-        	<Text>Hello World</Text>
-        </View>
+        <Provider store = {store}>
+          <Main />
+        </Provider>
 	);
 }
