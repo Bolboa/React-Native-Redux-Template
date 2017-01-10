@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import {
     StyleSheet,
@@ -12,16 +12,16 @@ import {
 
 import { test } from '../actions'
 
-class Main extends Component{
+class First extends Component{
   constructor(){
     super();
   }
   render() {
     return (
       <View>
-        <Text>Hello</Text>
+        <Text>Hello World</Text>
       </View>
-    )
+    );
   }
 }
 
@@ -35,4 +35,4 @@ function mapStateToProps(state){
 	return { testing:state.testing }
 }
 
-export default connect(mapStateToProps, matchDispatchToProps)(Main);
+export default connect(mapStateToProps, matchDispatchToProps)(First);

@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import Home from './containers/index';
+import Home from './src/index';
 import {AppRegistry} from 'react-native';
 
 AppRegistry.registerComponent('Template', () => Home);

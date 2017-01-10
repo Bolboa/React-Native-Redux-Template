@@ -10,9 +10,9 @@ import {
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import allReducers from '../reducers';
+import allReducers from './reducers';
 
-import Main from './main.js';
+import Main from './containers/main.js';
 
 const store = createStore(allReducers);
 
